@@ -31,13 +31,14 @@
     <li>an OAuth access token and refresh token for the owner's account;</li>
     <li>the owner's channel ID, title and description;</li>
     <li>the IDs and status of the videos, Shorts, thumbnails, subtitles and comments that the tool itself uploads or posts;</li>
-    <li>aggregate statistics of the owner's own channel and videos (views, watch time, audience retention) from the YouTube Analytics API.</li>
+    <li>aggregate statistics of the owner's own channel and videos (views, watch time, audience retention) from the YouTube Analytics API;</li>
+    <li>the public comments that viewers post under the channel's own videos (comment text, author display name and channel ID), so the owner can reply to them and moderate them.</li>
   </ul>
   <p>Separately, with an API key and without signing in, Model Diff reads public YouTube search results (video titles and view counts) a few times a day to see which AI topics people search for. These results are used only to score topics internally; they are never displayed publicly, redistributed or combined with any personal data, and they are refreshed rather than archived.</p>
-  <p>Model Diff does not access viewers' personal data, other channels' private data, private messages, contacts, analytics of other users, or payment information.</p>
+  <p>Comments are used only to reply and moderate under the channel's own videos; they are never used for profiling, advertising or any other purpose, and stored copies are deleted within 30 days. Model Diff does not access viewers' private data, other channels' private data, private messages, contacts, analytics of other users, or payment information.</p>
 
   <h2>How we use it</h2>
-  <p>The data is used only to upload and publish the channel's own videos, set their metadata, post the channel's first comment under them, update the channel's own description, and show the owner how the channel's own videos perform. It is not used for advertising, profiling, or any other purpose, and it is never sold.</p>
+  <p>The data is used only to upload and publish the channel's own videos, set their metadata, post the channel's comments and replies under them, hold, approve or remove comments under them, update the channel's own description, and show the owner how the channel's own videos perform. It is not used for advertising, profiling, or any other purpose, and it is never sold.</p>
 
   <h2>Storage and sharing</h2>
   <p>Tokens and channel data are stored only on the owner's private server, in files readable only by the tool. They are not shared with or transferred to any third party. Video files and scripts are the channel's own content.</p>
